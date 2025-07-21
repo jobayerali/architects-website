@@ -22,6 +22,10 @@
   
 }
 
+.text-primary{
+  color: orange;
+}
+
 .text-gray{
   color:#424242;
 }
@@ -39,6 +43,24 @@
 .disply-flex{
   display: flex;
 }
+main{
+  max-width: 1440px;
+  margin: 0 auto ;
+}
+
+main > section{
+  margin-top:130px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .nav-item{
   list-style: none;
@@ -65,7 +87,7 @@ li a:hover{
 .navbar, .banner{
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #f3f1f1;
+  /*background-color: #f3f1f1;*/
 }
 
 .brand{
@@ -93,12 +115,49 @@ li a:hover{
   width: 100%;
 }
 
-/* responsive media query ; */
+/* team and feature  related style */
+.teams{
+  align-items: center;
+}
+
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-features{
+  margin-left: 130px;
+}
+
+.feature-title{
+  font-size: 2.8rem;
+  font-weight:700;
+}
+#quick-list{
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query  */
 @media screen and (max-width:576px) {
   .disply-flex{
 
   }
-  .navbar, .nav-link{
+  .navbar, .nav-links{
     flex-direction: column;
   }
+  
 }
